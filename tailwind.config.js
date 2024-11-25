@@ -6,6 +6,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      geist_mono : 'geistMono'
+    },
     extend: {
       colors: {
         background: "var(--background)",
