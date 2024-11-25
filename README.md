@@ -8,6 +8,10 @@ With its open-source structure, developers can contribute to the project and add
 - `/components` - Contains reusable React components.
 - `/data` - Contains data related to prompts and categories.
 
+## Inspiration
+- `cursor.directory` - I used it for a fast and user-friendly interface structure.
+- `semrush.com` - I used it for efficient prompt content.
+
 
 ## Getting Started
 
