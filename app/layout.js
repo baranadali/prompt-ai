@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistMono.variable} antialiased bg-black`}>
+        <Analytics/>
         {children}
       </body>
     </html>
