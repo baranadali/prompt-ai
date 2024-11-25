@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex flex-col gap-1">
             <h2 className="text-sm text-white">{prm.title}</h2>
             <div className="flex items-center gap-2">
-              <span className="size-3 rounded-full bg-red-400 block overflow-hidden">
+              <span className="size-3 rounded-full bg-zinc-900 block overflow-hidden">
                 <img className="w-full h-auto" src={`https://pbs.twimg.com/profile_images/${prm.creator_image_id}_400x400.jpg`}/>
               </span>
               <p className="text-xs text-zinc-500">Added <Link target="_blank" href={prm.creator_link}>{prm.creator}</Link></p>
