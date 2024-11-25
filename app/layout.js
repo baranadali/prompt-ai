@@ -1,6 +1,7 @@
+import { Analytics } from "@vercel/analytics/react"
 import localFont from "next/font/local";
-import { Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",

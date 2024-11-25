@@ -12,7 +12,6 @@ With its open-source structure, developers can contribute to the project and add
 - `cursor.directory` - I used it for a fast and user-friendly interface structure.
 - `semrush.com` - I used it for efficient prompt content.
 
-
 ## Getting Started
 
 First, run the development server:
