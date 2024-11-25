@@ -16,9 +16,9 @@ export default function Sidebar({ selectedCategory, setSelectedCategory }) {
     return (
         <div className="sm:py-8 py-4 px-4 sm:h-full h-[20vh] overflow-y-scroll border-r border-zinc-900 flex flex-col justify-between sm:fixed sm:w-[16%] w-full top-0 left-0 border-b">
             <div>
-                <Link className="font-geist_mono text-xs" href="/">prompt-ai.directory</Link>
+                <Link className="font-geist_mono text-xs text-white" href="/">prompt-ai.directory</Link>
                 <ul className="sm:mt-16 mt-4 flex flex-col gap-1 h-full ">
-                    <p className={`flex items-center justify-between hover:bg-zinc-900 py-2 px-3 cursor-pointer rounded-md text-xs ${selectedCategory === null && 'bg-zinc-900'}`} onClick={() => setSelectedCategory(null)}>All</p>
+                    <p className={`flex items-center justify-between hover:bg-zinc-900 py-2 px-3 cursor-pointer rounded-md text-xs text-white ${selectedCategory === null && 'bg-zinc-900'}`} onClick={() => setSelectedCategory(null)}>All</p>
                     {categoryCounts.map((ctg, index) => (
                         <li key={index} className={`flex items-center justify-between hover:bg-zinc-900 py-2 px-3 cursor-pointer rounded-md ${selectedCategory === ctg.name ? 'bg-zinc-900' : ''}`} onClick={() => setSelectedCategory(ctg.name)}>
                             <p className="text-xs">{ctg.name}</p>

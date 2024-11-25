@@ -35,7 +35,7 @@ export default function Home() {
         <p className="text-xs font-geist_mono text-zinc-500 bg-zinc-900 p-3 h-40 overflow-y-scroll rounded-lg relative transation-all duration-100 hover:text-zinc-200" >{prm.content}</p>
         <div className="mt-4 flex items-center justify-between">
           <div className="flex flex-col gap-1">
-            <h2 className="text-sm">{prm.title}</h2>
+            <h2 className="text-sm text-white">{prm.title}</h2>
             <div className="flex items-center gap-2">
               <span className="size-3 rounded-full bg-red-400 block overflow-hidden">
                 <img className="w-full h-auto" src={`https://pbs.twimg.com/profile_images/${prm.creator_image_id}_400x400.jpg`}/>
