@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## AI Prompt Sharing Platform
+
+This project is an AI prompt sharing platform that allows users to discover and utilize AI prompts across various categories. You can find prompts for content creation, SEO, social media marketing, and more, saving time and improving efficiency. 
+
+With its open-source structure, developers can contribute to the project and add new features. This platform is an ideal resource for anyone looking to make the most of AI tools.
+
+## Overview
+- `/components` - Contains reusable React components.
+- `/data` - Contains data related to prompts and categories.
+
 
 ## Getting Started
 

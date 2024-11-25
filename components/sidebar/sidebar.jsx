@@ -26,7 +26,7 @@ export default function Sidebar( { selectedCategory, setSelectedCategory } ) {
             </div>
             <div className="sm:block hidden">
                 <p className="text-xs text-zinc-500 font-light flex flex-col gap-2 mb-8">This is an AI prompt sharing platform developed with open-source code. You can contribute to the project by adding new features! The data was obtained from semrush.com
-                    <Link href="https://github.com/baranadali/prompt-ai" target="_blank" className="flex items-center gap-1 text-zinc-300">
+                    <Link href="https://github.com/baranadali/ai-prompt.git" target="_blank" className="flex items-center gap-1 text-zinc-300">
                         <IoMdArrowForward/>
                         <p>Go repoistories</p>
                     </Link>
