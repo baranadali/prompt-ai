@@ -3,19 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { prompt } from '@/data/prompt';
 import { MdOutlineContentCopy } from "react-icons/md";
+import { PromptItem } from "@/types";
 
 interface ContentProps {
     selectedCategory: string | null;
     setselectedCategory: (category: string | null) => void;
-}
-
-interface PromptItem {
-    title: string;
-    content: string;
-    creator: string;
-    creator_link: string;
-    creator_image_id: string;
-    category: string[];
 }
 
 export default function Content({ selectedCategory }: ContentProps) {

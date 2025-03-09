@@ -3,16 +3,13 @@ import { categories } from '@/data/categories';
 import { prompt } from '@/data/prompt';
 import { IoMdArrowForward } from "react-icons/io";
 import { RiTwitterXFill } from "react-icons/ri";
+import { CategoryCount } from "@/types";
 
 interface SidebarProps {
     selectedCategory: string | null;
     setSelectedCategory: (category: string | null) => void;
 }
 
-interface CategoryCount {
-    name: string;
-    count: number;
-}
 
 export default function Sidebar({ selectedCategory, setSelectedCategory }: SidebarProps) {
     const categoryCounts: CategoryCount[] = categories.map((category) => {
