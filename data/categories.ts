@@ -1,4 +1,4 @@
-export const categories = [
+export const categories: string[] = [
     'Advertising',
     'Content Creation',
     'Data Science',
