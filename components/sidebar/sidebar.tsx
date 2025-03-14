@@ -1,11 +1,18 @@
 import Link from "next/link";
-import {categories} from '@/data/categories'
-import {prompt} from '@/data/prompt'
+import { categories } from '@/data/categories';
+import { prompt } from '@/data/prompt';
 import { IoMdArrowForward } from "react-icons/io";
 import { RiTwitterXFill } from "react-icons/ri";
+import { CategoryCount } from "@/types";
 
-export default function Sidebar( { selectedCategory, setSelectedCategory } ) {
-    const categoryCounts = categories.map((category) => {
+interface SidebarProps {
+    selectedCategory: string | null;
+    setSelectedCategory: (category: string | null) => void;
+}
+
+
+export default function Sidebar({ selectedCategory, setSelectedCategory }: SidebarProps) {
+    const categoryCounts: CategoryCount[] = categories.map((category) => {
         const count = prompt.filter((item) => item.category && item.category.includes(category)).length;
         return { name: category, count };
     });
@@ -27,14 +34,14 @@ export default function Sidebar( { selectedCategory, setSelectedCategory } ) {
             <div className="sm:block hidden">
                 <p className="text-xs text-zinc-500 font-light flex flex-col gap-2 mb-8">This is an AI prompt sharing platform developed with open-source code. You can contribute to the project by adding new features! The data was obtained from semrush.com
                     <Link href="https://github.com/baranadali/prompt-ai" target="_blank" className="flex items-center gap-1 text-zinc-300">
-                        <IoMdArrowForward/>
+                        <IoMdArrowForward />
                         <p>Go repoistories</p>
                     </Link>
                 </p>
                 <Link href="https://x.com/baaranadali" target="_blank">
-                    <RiTwitterXFill className="text-xs text-white"/>
+                    <RiTwitterXFill className="text-xs text-white" />
                 </Link>
             </div>
         </div>
-    )
+    );
 }

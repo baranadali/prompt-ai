@@ -1,4 +1,6 @@
-export const prompt = [
+import { PromptItem } from "@/types";
+
+export const prompt: PromptItem[] = [
     {
         title: 'Meta description',
         content: "Act as a professional, experienced content writer. I’m writing a blog post on [topic]. I need you to write a compelling 150-character max meta description for my blog post that includes my primary keyword [keyword]. The meta description needs to accurately summarize the blog post's content while enticing users to click through from search results. We want to strike a balance between being informative and persuasive. Here are a couple of examples of effective meta descriptions you can use as inspiration: (Insert examples). To help you craft an accurate and relevant meta description, here is my article's introduction: (Copy and paste the article’s introduction).",
